@@ -1,0 +1,29 @@
+.header{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+ 
+    /* justify-content: space-around; */
+    
+}
+#header-text{
+    text-decoration: none !important;
+    color: rgb(255, 144, 47)!important;
+}
+#logo-img{
+    width: 200px;
+    display: flex;
+   
+}
+.nav-bar{
+    height: 150px;
+}
+.header-text-wrapper{
+    align-self: center;
+    display: flex;
+    margin:auto;
+}
+.nav-wrapper{
+    display: flex;
+    
+}

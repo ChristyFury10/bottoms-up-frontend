@@ -1,0 +1,37 @@
+
+#bars-list{
+    height: 600px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+       }
+     
+       &::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255,.1);
+        border-radius: 3px;
+     
+       }
+    
+}
+#list-label{
+    text-align: center;
+    border: 0px !important
+}
+.bar-item{
+    text-align: center;
+    
+}
+.collection{
+    border-radius: 6px;
+}
+.main-list{
+    display: flex;
+    margin-left: 50px;
+    
+}
+#map { height: 180px; }
+
+.map-div{
+    margin-left: 50px;
+}
