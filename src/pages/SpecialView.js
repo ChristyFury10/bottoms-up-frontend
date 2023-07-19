@@ -32,7 +32,7 @@ const SpecialView = ({bar, setBar, index, special, setSpecial}) => {
 
     let getBar = async () => {
         try {
-          let barResponse = await fetch(`/api/bars/${bar_id}`);
+          let barResponse = await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${bar_id}`);
           let barData = await barResponse.json();
           setBar(barData);
           // console.log(bar)
@@ -57,9 +57,9 @@ const SpecialView = ({bar, setBar, index, special, setSpecial}) => {
           method: "DELETE",
         };
     
-        await fetch(`/api/bars/${bar_id}/specials/${special_id}/delete`, options);
+        await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${bar_id}/specials/${special_id}/delete`, options);
     
-        navigate(`/bars/${bar_id}`);
+        navigate(`https://bpttoms-up-backend.onrender.com/bars/${bar_id}`);
       };
 
     if (!bar || !special) {

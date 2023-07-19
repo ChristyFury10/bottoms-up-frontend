@@ -22,7 +22,7 @@ const BarDetailPage = ({bar, setBar, index}) => {
 
     
     let getBar = async () => {
-        let response = await fetch(`/api/bars/${id}`)
+        let response = await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${id}`)
         let data = await response.json()
         setBar(data)
         // let barSpecials = await fetch(`/api/bars/${id}`)

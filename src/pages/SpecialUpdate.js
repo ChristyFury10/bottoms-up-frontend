@@ -31,7 +31,7 @@ const SpecialUpdate = ({special, setSpecial}) => {
     
     let getBar = async () => {
       try {
-        let barResponse = await fetch(`/api/bars/${bar_id}`);
+        let barResponse = await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${bar_id}`);
         let barData = await barResponse.json();
         setBar(barData);
           let barSpecials = await fetch(`/api/bars/${bar_id}`)
@@ -92,9 +92,9 @@ const SpecialUpdate = ({special, setSpecial}) => {
           },
           body: JSON.stringify(specialForm)
         }
-        await fetch(`/api/bars/${bar_id}/specials/${special_id}/update`, options);
+        await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${bar_id}/specials/${special_id}/update`, options);
 
-        navigate(`/bars/${bar_id}/specials/${special_id}`)
+        navigate(`https://bpttoms-up-backend.onrender.com/bars/${bar_id}/specials/${special_id}`)
     }
 
     return (

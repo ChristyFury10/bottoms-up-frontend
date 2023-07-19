@@ -14,7 +14,7 @@ const BarListPage = ({bars, setBars}) => {
     }, [])
 
     let getBars = async () => {
-        let response = await fetch('/api/bars')
+        let response = await fetch('https://bpttoms-up-backend.onrender.com/api/bars')
         let data =  await response.json()
         setBars(data)
 
