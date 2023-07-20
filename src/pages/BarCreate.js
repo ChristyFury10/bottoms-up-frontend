@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../componenets/Header';
+import Footer from '../componenets/Footer';
 
 const BarCreate = ({bar, setBar}) => {
 
@@ -51,7 +52,7 @@ const BarCreate = ({bar, setBar}) => {
         <Link to={`/bars`}><a class="btn-floating btn-large waves-effect waves-light green z-depth-5"><i class="material-icons">arrow_back</i></a></Link>
         </form>
         
-         
+        <Footer/> 
     </div>
   )
 }

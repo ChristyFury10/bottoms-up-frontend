@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom'
 import SpecialItem from '../componenets/SpecialItem';
 import Header from '../componenets/Header';
+import Footer from '../componenets/Footer';
 
 const BarDetailPage = ({bar, setBar, index}) => {
 
@@ -59,6 +60,7 @@ const BarDetailPage = ({bar, setBar, index}) => {
      <Link to={`/bars/${id}/specials/new`}> <a class="btn-floating btn-large waves-effect waves-light blue z-depth-5"><i class="material-icons">add</i></a></Link>
      <Link to={`/bars/${id}/update`}><a class="btn-floating btn-large waves-effect waves-light orange z-depth-5"><i class="material-icons">edit</i></a></Link>
      <Link to={`/bars`}><a class="btn-floating btn-large waves-effect waves-light green z-depth-5"><i class="material-icons">arrow_back</i></a></Link>
+     <Footer/>
     </div>
   );
 

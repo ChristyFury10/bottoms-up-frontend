@@ -4,6 +4,7 @@ import BarItem from '../componenets/BarItem'
 import './BarListPage.css'
 import Header from '../componenets/Header'
 import MapComp from '../componenets/MapComp'
+import Footer from '../componenets/Footer'
 
 
 const BarListPage = ({bars, setBars}) => {
@@ -33,14 +34,17 @@ const BarListPage = ({bars, setBars}) => {
                 </ul>
                 </div>
             ))}
+            
           </div>
           <div className='map-div'>
             <MapComp bars={bars}></MapComp>
+            <span className='add-text'><br/>Want to add a bar that's not here yet? 
+      <Link to={`/bars/create`}><a class="btn-floating btn-medium waves-effect waves-light blue z-depth-5 add-button"><i class="material-icons">add</i></a></Link></span>
           </div>
+          
         </div>
-      <span>Want to add a bar that's not here yet?  </span>
-      <Link to={`/bars/create`}><a class="btn-floating btn-large waves-effect waves-light blue z-depth-5"><i class="material-icons">add</i></a></Link>
       
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,6 @@
+#footer-nav{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: rgb(1, 25, 51);
+}
