@@ -47,3 +47,14 @@ Wireframes:
 ERD Models:
 
 <img src="https://i.imgur.com/Q3aq7fF.png">
+
+## COMING SOON (Future Features)
+- Dynamicly add map markers
+- Weekday filter and weekday field in models
+- Link markers to bar detail page
+- Add bar URL
+
+Want to work on this locally?
+- clone and branch the repo
+- npm i will install dependencies
+- don't forget to create a virtual environment and install dependencies there
