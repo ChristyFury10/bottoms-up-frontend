@@ -41,7 +41,7 @@ Milestones:
 
 Wireframes:
 
-<img src="https://i.imgur.com/D26xswx.jpg>
+<img src="https://i.imgur.com/D26xswx.jpg">
 
 ERD Models:
 
