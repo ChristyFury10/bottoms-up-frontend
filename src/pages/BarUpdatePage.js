@@ -57,7 +57,7 @@ const BarUpdatePage = ({bar, setBar}) => {
         
     }
     const deleteBar = async ()=>{
-            fetch(`/api/bars/${id}/delete`, {
+            fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${id}/delete`, {
                 method: 'DELETE', 
                 'headers': {
                     'Content-Type' :'application/json'

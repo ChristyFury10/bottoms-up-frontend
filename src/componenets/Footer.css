@@ -3,4 +3,32 @@
     flex-direction: row;
     height: 200px;
     background-color: rgb(1, 25, 51);
+    bottom: 0px;
+    margin-top: 20px;
+}
+.faded-logo{
+    width: 125px;
+    margin: auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.name-div{
+    flex: 1;
+}
+.contact-div{
+    flex: 1;
+    margin-right: 12px;
+
+}
+.contact-icon{
+    margin-right: 8px;
+    color:rgb(0, 0, 0)
+}
+.contact-icon:hover{
+    color: rgb(13, 13, 32);
 }

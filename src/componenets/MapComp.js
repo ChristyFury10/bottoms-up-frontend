@@ -21,11 +21,41 @@ const LeafletMap = ({bars}) => {
           <div><h5>Inner Harbor</h5></div>
         </Popup>
       </Marker>
-      {bars.map(bar=>(
+      {/* {bars.map(bar=>(
         <Marker position={[39.281270,-76.578010]}>
 
         </Marker>
-      ))}
+      ))} */}
+      <Marker position={[39.281270, -76.578010]}>
+        <Popup position={[39.281270, -76.578010]}>
+          <div><h5>Mahaffey's</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.279890, -76.574580]}>
+        <Popup position={[39.279890, -76.574580]}>
+          <div><h5>El Buffalo</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.282380, -76.575700]}>
+        <Popup position={[39.282380, -76.575700]}>
+          <div><h5>Lee's Pint and Shell</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.284500, -76.569560]}>
+        <Popup position={[39.284500, -76.569560]}>
+          <div><h5>The Chausser</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.280540, -76.570730]}>
+        <Popup position={[39.280540, -76.570730]}>
+          <div><h5>Walt's Inn</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.280540, -76.570730]}>
+        <Popup position={[39.280540, -76.570730]}>
+          <div><h5>Mobtown Brewing Company</h5></div>
+        </Popup>
+      </Marker>
     </MapContainer>
     </div>
   );
