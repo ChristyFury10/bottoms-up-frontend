@@ -1,6 +1,7 @@
 # BOTTOMS UP - an app to find your local happy hours every day!
 
-The purpose of this application is to allow users to search for happy hour specials and daily events in their area. 
+#### Picture this: It's a beautiful friday afternoon, you and your friends are all off work for the week. It has been agreed that the plan is to spend a few hours catching up over some drinks or food, the only problem is who has a good happy hour special going on right now? Thats where BottomsUp comes in! This app will be able to keep track of all of the bars in the area and what deals and events they have going on each day of the week. No more Google searching one restaurant at a time to see if they are even open today, everything is right at your fingetips with this one application. Be responsible, BOTTOMSUP!
+
 
 ### built with Python, django, and React. Postgresql database. MaterializeCSS and AnimateCSS for styling. 
 
