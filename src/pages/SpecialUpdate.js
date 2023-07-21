@@ -25,8 +25,9 @@ const SpecialUpdate = ({special, setSpecial}) => {
     //     };
 
     useEffect(() =>{
-        getBar()
-    }, [])
+        getBar();
+        setSpecialForm(special);
+    }, [special])
     
     
     let getBar = async () => {
@@ -94,7 +95,7 @@ const SpecialUpdate = ({special, setSpecial}) => {
         }
         await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${bar_id}/specials/${special_id}/update`, options);
 
-        navigate(`https://bpttoms-up-backend.onrender.com/bars/${bar_id}/specials/${special_id}`)
+        navigate(`/bars/${bar_id}/specials/${special_id}`)
     }
 
     return (
