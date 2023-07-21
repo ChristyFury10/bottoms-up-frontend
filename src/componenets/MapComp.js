@@ -51,9 +51,19 @@ const LeafletMap = ({bars}) => {
           <div><h5>Walt's Inn</h5></div>
         </Popup>
       </Marker>
-      <Marker position={[39.280540, -76.570730]}>
-        <Popup position={[39.280540, -76.570730]}>
+      <Marker position={[39.2843704, -76.5625121]}>
+        <Popup position={[39.2843704, -76.5625121]}>
           <div><h5>Mobtown Brewing Company</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.3359946, -76.6440414]}>
+        <Popup position={[39.3359946, -76.6440414]}>
+          <div><h5>Union Brewing</h5></div>
+        </Popup>
+      </Marker>
+      <Marker position={[39.2759176, -76.6157089]}>
+        <Popup position={[39.2759176, -76.6157089]}>
+          <div><h5>Mum's</h5></div>
         </Popup>
       </Marker>
     </MapContainer>
