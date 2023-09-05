@@ -25,7 +25,7 @@ const BarCreate = ({bar, setBar}) => {
 			},
 			body: JSON.stringify(newBar)
 		}
-        await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/create`, options)
+        await fetch(`http://18.116.241.164:8000/api/bars/create`, options)
 
         // setBar(newBar)
         // createBar();
