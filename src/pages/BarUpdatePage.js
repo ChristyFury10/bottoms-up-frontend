@@ -23,7 +23,7 @@ const BarUpdatePage = ({bar, setBar}) => {
 
     
     let getBar = async () => {
-        let response = await fetch(`http://18.116.241.164:8000/api/bars/${id}`)
+        let response = await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${id}`)
         let data = await response.json()
         setBar(data)
         const{name, address, hours, specials} = data
@@ -50,14 +50,14 @@ const BarUpdatePage = ({bar, setBar}) => {
 		}
         console.log("barState:", bar)
 
-        await fetch(`http://18.116.241.164:8000/api/bars/${id}/update`, options);
+        await fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${id}/update`, options);
         
         navigate(`/bars/${id}`)
     
         
     }
     const deleteBar = async ()=>{
-            fetch(`http://18.116.241.164:8000/api/bars/${id}/delete`, {
+            fetch(`https://bpttoms-up-backend.onrender.com/api/bars/${id}/delete`, {
                 method: 'DELETE', 
                 'headers': {
                     'Content-Type' :'application/json'
